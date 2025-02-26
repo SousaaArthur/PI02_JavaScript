@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+<body>
+  <h1>Calculadora</h1>
+
+  <script>
+    let option; 
+
+    do{
+      option = prompt(
+        "Escolha uma operação!\n\n" + 
+        "1. Somar\n" +
+        "2. Subtrair\n" +
+        "3. Multiplicar\n" +
+        "4. Dividir\n" +
+        "5. Sair"
+      );
+
+      switch(option){
+        case "1":
+          num1+=num2;
+          break
+        case "2":
+          num1-=num2;
+          break
+        case "3": 
+          num1*=num2;
+          break
+        case "4":
+          num1/=num2;
+          break
+        default:
+          alert("Escolha uma das opções!!!");
+          break
+      }
+    } while (option !== "5") ;
+  </script>
+</body>
+</html>
